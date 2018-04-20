@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="sale_sheet_text">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/activity_item_text_content_size</item>
+        <item name="android:textColor">@color/colorTextContent</item>
+    </style>
+
+    <style name="sale_sheet_text_content" parent="@style/sale_sheet_text">
+    </style>
+
+    <style name="sale_sheet_text_label" parent="@style/sale_sheet_text">
+        <item name="android:textColor">@color/colorTextLabel</item>
+        <item name="android:textSize">@dimen/activity_item_text_label_size</item>
+    </style>
+
+
+
+</resources>

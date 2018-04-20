@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_sale_detail_image"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_item_icon_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_sale_detail_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/activity_item_padding_general"
+            android:paddingLeft="@dimen/activity_item_padding_left"
+            android:paddingRight="@dimen/activity_item_padding_left"
+            android:textSize="@dimen/activity_item_text_title_size"
+            app:layout_constraintBottom_toBottomOf="@+id/item_sale_detail_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- description -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_sale_detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_item_margin_general"
+            android:paddingLeft="@dimen/activity_item_padding_left"
+            android:paddingRight="@dimen/activity_item_padding_left"
+            android:textAppearance="@style/sale_sheet_text_content"
+            app:layout_constraintTop_toBottomOf="@id/item_sale_detail_image"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_sale_detail_description_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_item_padding_left"
+            android:paddingRight="@dimen/activity_item_padding_left"
+            android:textAppearance="@style/sale_sheet_text_label"
+            android:visibility="gone"
+            android:text="@string/label_description"
+            app:layout_constraintTop_toBottomOf="@id/item_sale_detail_description"
+        />
+
+        <!-- begins -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_sale_detail_begins"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/activity_item_margin_general"
+            android:paddingLeft="@dimen/activity_item_padding_left"
+            android:paddingRight="@dimen/activity_item_padding_left"
+            android:textAppearance="@style/sale_sheet_text_content"
+            app:layout_constraintTop_toBottomOf="@id/item_sale_detail_description_label"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_sale_detail_begins_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_item_padding_left"
+            android:paddingRight="@dimen/activity_item_padding_left"
+            android:textAppearance="@style/sale_sheet_text_label"
+            android:visibility="gone"
+            android:text="@string/label_begins"
+            app:layout_constraintTop_toBottomOf="@id/item_sale_detail_begins"
+            />
+
+        <!-- ends -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_sale_detail_ends"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/activity_item_margin_general"
+            android:paddingLeft="@dimen/activity_item_padding_left"
+            android:paddingRight="@dimen/activity_item_padding_left"
+            android:textAppearance="@style/sale_sheet_text_content"
+            app:layout_constraintTop_toBottomOf="@id/item_sale_detail_begins_label"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_sale_detail_ends_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_item_padding_left"
+            android:paddingRight="@dimen/activity_item_padding_left"
+            android:textAppearance="@style/sale_sheet_text_label"
+            android:visibility="gone"
+            android:text="@string/label_ends"
+            app:layout_constraintTop_toBottomOf="@id/item_sale_detail_ends"
+            />
+
+        <!-- URL -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_sale_detail_url"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/activity_item_margin_general"
+            android:paddingLeft="@dimen/activity_item_padding_left"
+            android:paddingRight="@dimen/activity_item_padding_left"
+            android:textAppearance="@style/sale_sheet_text_content"
+            app:layout_constraintTop_toBottomOf="@id/item_sale_detail_ends_label"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_sale_detail_url_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_item_padding_left"
+            android:paddingRight="@dimen/activity_item_padding_left"
+            android:textAppearance="@style/sale_sheet_text_label"
+            android:visibility="gone"
+            android:text="@string/label_URL"
+            app:layout_constraintTop_toBottomOf="@id/item_sale_detail_url"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
