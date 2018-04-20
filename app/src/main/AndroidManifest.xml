@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.activity.SaleItemActivity"/>
+        <activity android:name=".view.activity.SaleItemActivity"
+            android:parentActivityName=".view.activity.SaleListActivity"/>
     </application>
 </manifest>
