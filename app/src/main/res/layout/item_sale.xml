@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
 >
 
+    <!-- TODO add ripple later android:foreground="?android:attr/selectableItemBackground" -->
     <ImageView
         android:id="@+id/item_sale_image"
         android:layout_width="match_parent"
