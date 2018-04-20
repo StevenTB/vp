@@ -106,6 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/activity_item_margin_general"
+            android:textStyle="bold"
             android:paddingLeft="@dimen/activity_item_padding_left"
             android:paddingRight="@dimen/activity_item_padding_left"
             android:textAppearance="@style/sale_sheet_text_content"
