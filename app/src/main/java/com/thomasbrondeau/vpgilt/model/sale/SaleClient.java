@@ -5,8 +5,6 @@ import com.thomasbrondeau.vpgilt.model.entity.SaleBase;
 import com.thomasbrondeau.vpgilt.model.network.Network;
 import com.thomasbrondeau.vpgilt.model.network.NetworkCallback;
 
-import timber.log.Timber;
-
 /**
  * Created by THOMASBRONDEAU_Steven on 18/04/2018.
  */
@@ -21,9 +19,7 @@ public class SaleClient extends BaseClient {
         NetworkCallback networkCallback = new NetworkCallback() {
             @Override
             public void success(String body) {
-                Timber.i("Parsing sale list...");
                 SaleBase saleBase = new Gson().fromJson(body, SaleBase.class);
-                Timber.i("Parsed sale list !");
                 callback.onSaleListReceived(saleBase.saleList);
             }
 
