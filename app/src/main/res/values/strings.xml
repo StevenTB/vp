@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">VP Gilt</string>
     <string name="retry">Retry</string>
-    <string name="error_msg">An error occured. Please check your network</string>
+    <string name="error_msg">An error occurred. Please check your network</string>
+
+    <string name="content_description_sale_item">Image of the sale</string>
 
     <string name="label_description">Description</string>
     <string name="label_begins">Begins</string>
