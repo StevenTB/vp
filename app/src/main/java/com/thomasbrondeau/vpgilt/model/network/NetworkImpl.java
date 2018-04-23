@@ -16,6 +16,7 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Retrofit;
+import timber.log.Timber;
 
 /**
  * Created by THOMASBRONDEAU_Steven on 18/04/2018.
@@ -84,7 +85,7 @@ public class NetworkImpl implements Network {
                 body = response.body().string();
             }
         } catch (Exception e) {
-            //TODO : Timber.e
+            Timber.e("Error while retrieving response body", e);
         }
         return body;
     }
