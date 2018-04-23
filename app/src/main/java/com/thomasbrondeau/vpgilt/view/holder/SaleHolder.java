@@ -43,7 +43,7 @@ public class SaleHolder extends RecyclerView.ViewHolder {
     }
 
     public void render(Context context, final int position, final Sale sale) { //TODO remove mock
-        ImageComponent.loadImage(context, sale.getImageUrlByDimens(), icon);
+        ImageComponent.loadImage(context, sale.getImageUrlByDimens(), icon, true);
         title.setText(sale.getSaleName());
         layout.setOnClickListener(new View.OnClickListener(){
             @Override

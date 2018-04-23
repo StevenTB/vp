@@ -3,9 +3,12 @@ package com.thomasbrondeau.vpgilt.view.component;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.support.v7.widget.RecyclerViewAccessibilityDelegate;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 
 /**
@@ -15,8 +18,19 @@ import com.bumptech.glide.request.RequestOptions;
 
 public class ImageComponent {
 
-    public static void loadImage(Context ctx, String url, ImageView imageView){
-        final RequestOptions options = new RequestOptions().placeholder(new ColorDrawable(Color.GRAY));
-        Glide.with(ctx).load(url).apply(options).into(imageView);
+    public static void loadImage(final Context ctx, String url, ImageView imageView, boolean roundedCorners){
+        final int RADIUS = 10;
+
+        RequestOptions options = new RequestOptions()
+                .placeholder(new ColorDrawable(Color.LTGRAY));
+
+        if (roundedCorners) {
+            options = options.transforms(new CenterCrop(), new RoundedCorners(RADIUS));
+        }
+
+        Glide.with(ctx)
+                .load(url)
+                .apply(options)
+                .into(imageView);
     }
 }
