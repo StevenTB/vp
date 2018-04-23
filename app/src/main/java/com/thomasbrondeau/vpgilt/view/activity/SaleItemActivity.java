@@ -72,7 +72,7 @@ public class SaleItemActivity extends BaseActivity implements SaleItemListView {
         if (null == sale) return;
 
         if (null != sale.getImageUrlList() && !sale.getImageUrlByDimens().equals("")) {
-            ImageComponent.loadImage(getApplicationContext(), sale.getImageUrlByDimens(), image);
+            ImageComponent.loadImage(getApplicationContext(), sale.getImageUrlByDimens(), image, false);
         }
 
         if (null != sale.getSaleName() && !sale.getSaleName().equals("")) {
